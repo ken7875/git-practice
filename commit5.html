@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    <p>reset test1</p>
+    <div>789</div>
+    <div>213123</div>
+    <div>test1</div>
+    <p class="asd"></p>
 </body>
+
+<script>
+  var searchBST = function(root, val) {
+    let left = 0
+    let right = 0
+    let result = []
+    while (val < root[i]) {
+        for(let i = 0; i < root.length; i++) {
+            if(val === root[i]) {
+                left = root[i + 1]
+                right = root[i + 2]
+                result.push(root[i], root[i + 2], root[i + 3])
+            }
+        }
+    }
+    return result
+  };
+  console.log(searchBST([4,2,7,1,3], 2))
+</script>
 </html>
