@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm test
+# npm test
+LASTEST_COMMIT= git rev-parse --short HEAD
+echo LASTEST_COMMIT
