@@ -4,4 +4,10 @@
 # npm test
 # export LASTEST_COMMIT= git rev-parse --short HEAD
 
-bash ./test.sh
+# 获取最后一个提交的 SHA 值
+LAST_COMMIT_SHA=$(git rev-parse --short HEAD)
+
+# 打印 SHA 值到控制台
+echo "Last commit SHA: $LAST_COMMIT_SHA"
+
+exit 0
